@@ -2,13 +2,20 @@
     <head>
         <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
         <script src="mask.js"></script>
+        <script src="js/Inputmask-3.x/dist/jquery.inputmask.bundle.js"></script>
     </head>
     <body>
+        <h1>Jquery Mask</h1>
+        <br>
         <input type="text" id="document_number">
+        <br>
+        <h1>Jquery InputMask</h1>
+        <br>
+        <input type="text" id="document_number_two">
         <script type="text/javascript">
             $(document).ready(function () {
                 $("#document_number").mask('9999 99999 9999', { "placeholder": "____ _____ ____" });
-//                $("#document_number").("9999 99999 9999",{ "placeholder": "____ _____ ____" });
+                $("#document_number_two").inputmask("9999 99999 9999",{ "placeholder": "____ _____ ____" });
             });
         </script>
     </body>
